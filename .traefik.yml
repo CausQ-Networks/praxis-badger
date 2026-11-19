@@ -1,10 +1,10 @@
-displayName: Pangolin (Badger)
+displayName: Praxis (Badger)
 type: middleware
 iconPath: .assets/icon.png
 
-import: github.com/fosrl/badger
+import: github.com/CausQ-Networks/praxis-badger
 
-summary: Middleware auth bouncer for Pangolin
+summary: Middleware auth bouncer for Praxis
 
 testData:
     apiBaseUrl: "http://localhost:3001/api/v1"

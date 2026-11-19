@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/fosrl/badger/ips"
-	"github.com/fosrl/badger/version"
+	"github.com/CausQ-Networks/praxis-badger/ips"
+	"github.com/CausQ-Networks/praxis-badger/version"
 )
 
 type Config struct {
@@ -110,7 +110,7 @@ type VerifyResponse struct {
 		Role                 *string              `json:"role,omitempty"`
 		VirtualApiKeyId      *string              `json:"virtualApiKeyId,omitempty"`
 		ResponseHeaders      map[string]string    `json:"responseHeaders,omitempty"`
-		PangolinVersion      *string              `json:"pangolinVersion,omitempty"`
+		PraxisVersion      *string              `json:"pangolinVersion,omitempty"`
 		ClientError          *ClientErrorResponse `json:"clientError,omitempty"`
 	} `json:"data"`
 }

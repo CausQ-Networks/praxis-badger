@@ -1,19 +1,19 @@
-# Pangolin Middleware: Badger
+# Praxis Middleware: Badger
 
-Badger is a middleware plugin designed to work with Traefik in conjunction with [Pangolin](https://pangolin.net/github), an identity-aware reverse proxy and zero-trust VPN. Badger acts as an authentication bouncer, ensuring only authenticated and authorized requests are allowed through the proxy.
+Badger is a middleware plugin designed to work with Traefik in conjunction with [Praxis](https://praxis.net/github), an identity-aware reverse proxy and zero-trust VPN. Badger acts as an authentication bouncer, ensuring only authenticated and authorized requests are allowed through the proxy.
 
 > [!NOTE]
-> Badger can also be used standalone for IP handling (Cloudflare and custom proxy support) without Pangolin. Simply set `disableForwardAuth: true` in your configuration. See the [Disabling Forward Auth](#disabling-forward-auth) section below for details.
+> Badger can also be used standalone for IP handling (Cloudflare and custom proxy support) without Praxis. Simply set `disableForwardAuth: true` in your configuration. See the [Disabling Forward Auth](#disabling-forward-auth) section below for details.
 
-This plugin is **required** to be installed alongside [Pangolin](https://pangolin.net/github) to enforce secure authentication and session management.
+This plugin is **required** to be installed alongside [Praxis](https://praxis.net/github) to enforce secure authentication and session management.
 
 ## Installation
 
-Badger is automatically installed with Pangolin. Learn how to install Pangolin in the [Pangolin Documentation](https://docs.pangolin.net/self-host/quick-install).
+Badger is automatically installed with Praxis. Learn how to install Praxis in the [Praxis Documentation](https://docs.praxis.causq.com/self-host/quick-install).
 
 ## Configuration
 
-Pangolin will provide the necessary configuration to Badger automatically via the HTTP provider. However, you can override the configuration settings by manually providing them in the Traefik config.
+Praxis will provide the necessary configuration to Badger automatically via the HTTP provider. However, you can override the configuration settings by manually providing them in the Traefik config.
 
 ### Required Configuration Options
 
@@ -29,7 +29,7 @@ resourceSessionRequestParam: "p_session_request"
 
 To disable forward auth and only use IP handling, set `disableForwardAuth: true`. When enabled, all requests pass through without authentication, and the required configuration options above are not needed:
 
-Only do this if you do not need Pangolin's authentication features and only want IP handling.
+Only do this if you do not need Praxis's authentication features and only want IP handling.
 
 ```yaml
 disableForwardAuth: true
