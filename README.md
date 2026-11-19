@@ -1,15 +1,24 @@
 # Praxis Middleware: Badger
 
-Badger is a middleware plugin designed to work with Traefik in conjunction with [Praxis](https://praxis.net/github), an identity-aware reverse proxy and zero-trust VPN. Badger acts as an authentication bouncer, ensuring only authenticated and authorized requests are allowed through the proxy.
+<div align="center">
+  <a href="https://praxis.causq.com/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CausQ-Networks/praxis/main/public/logo/praxis-logo-white.png">
+      <img alt="Praxis Logo" src="https://raw.githubusercontent.com/CausQ-Networks/praxis/main/public/logo/praxis-logo.png" width="280">
+    </picture>
+  </a>
+</div>
+
+Badger is a middleware plugin designed to work with Traefik in conjunction with [Praxis](https://praxis.causq.com/github), an identity-aware reverse proxy and zero-trust VPN. Badger acts as an authentication bouncer, ensuring only authenticated and authorized requests are allowed through the proxy.
 
 > [!NOTE]
 > Badger can also be used standalone for IP handling (Cloudflare and custom proxy support) without Praxis. Simply set `disableForwardAuth: true` in your configuration. See the [Disabling Forward Auth](#disabling-forward-auth) section below for details.
 
-This plugin is **required** to be installed alongside [Praxis](https://praxis.net/github) to enforce secure authentication and session management.
+This plugin is **required** to be installed alongside [Praxis](https://praxis.causq.com/github) to enforce secure authentication and session management.
 
 ## Installation
 
-Badger is automatically installed with Praxis. Learn how to install Praxis in the [Praxis Documentation](https://docs.praxis.causq.com/self-host/quick-install).
+Badger is automatically installed with Praxis. Learn how to install Praxis in the [Praxis Documentation](https://docs-praxis.causq.com/self-host/quick-install).
 
 ## Configuration
 
